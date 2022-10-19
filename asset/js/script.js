@@ -17,7 +17,7 @@ document.querySelector("#button").onclick = function(){
                             +"</div>"
                             +"<div class='cards_wrap'>"
                                 +"<div class='card_item'>"
-                                    +"<a href='formulaire.html'>"
+                                    +"<a href='formulaire.php'>"
                                         +"<div class='card_inner'>"
                                             +"<img src='asset/img/202204191209452526.webp'>"
                                             +"<div class='title'>Black Panther</div>"
