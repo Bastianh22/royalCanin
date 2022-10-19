@@ -1,79 +1,95 @@
+let suggestions = [
+    'Abyssin',
+    'American curl', 
+    'American shorthair',
+    'American wirehair',
+    'Angora turc',
+    'Asian',
+    'Australian mist',
+    'Balinais',
+    'Bengal',
+    'Bleu russe',
+    'Bobtail américain',
+    'Bobtail des Kurilian',
+    'Bobtail japonais',
+    'Bombay',
+    'British longhair',
+    'British shorthair',
+    'Burmese',
+    'Burmilla',
+    'Chartreux',
+    'Cornish rex',
+    'Cymric',
+    'Devon rex',
+    'Donskoy',
+    'German rex',
+    'Havana brown',
+    'Khao manee',
+    'Korat',
+    'LaPerm',
+    'Manx',
+    'Maine coon',
+    'Mau égyptien',
+    'Munchkin',
+    'Neva masquerade',
+    'Norvégien',
+    'Ocicat',
+    'Oriental',
+    'Persan',
+    'Peterbald',
+    'Pixiebob',
+    'Ragamuffin',
+    'Ragdoll',
+    'Sacré de Birmanie',
+    'Scottish fold',
+    'Scottish straight',
+    'Selkirk rex',
+    'Seychellois',
+    'Siamois',
+    'Sibérien',
+    'Singapura',
+    'Snowshoe',
+    'Sokoké',
+    'Somali',
+    'Sphynx',
+    'Tonkinois',
+    'Turc de Van',
+    'Van kedisi'
+]
+
+let tableList = `<!--barre de rechercher avec suggestions-->
+                <div class='wrapper'>
+                    <div class='search-input'>
+                        <input type='text' placeholder='Rechercher...'>
+                        <div class='autocom-box'>
+                            <li>login</li>
+                            <li>html</li>
+                            <li>javascript</li>
+                            <li>freelancer</li>
+                            <li>web designer</li>
+                        </div>
+                        <div class='icon'><i class='fas fa-search'></i></div>
+                    </div>
+                </div>
+                <div class='cards_wrap'>`;
+
+for(i=0; i<suggestions.length; i++)
+{
+    console.log(i);
+    tableList += `<div class='card_item'>
+                    <a href='formulaireChat.php'>
+                        <div class='card_inner'>
+                            <img class='imgChat' src='asset/img/chat2.png'>
+                            <div class='title'> ${suggestions[i]}</div>
+                        </div>
+                    </a>
+                </div>`
+}
+
 document.querySelector("#button").onclick = function(){
 
     const changePage = document.querySelector("#change");
-    changePage.innerHTML = "<!--barre de rechercher avec suggestions-->"
-                            +"<div class='wrapper'>"
-                                +"<div class='search-input'>"
-                                    +"<input type='text' placeholder='Rechercher...'>"
-                                    +"<div class='autocom-box'>"
-                                        +"<li>login</li>"
-                                        +"<li>html</li>"
-                                        +"<li>javascript</li>"
-                                        +"<li>freelancer</li>"
-                                        +"<li>web designer</li>"
-                                    +"</div>"
-                                    +"<div class='icon'><i class='fas fa-search'></i></div>"
-                                +"</div>"
-                            +"</div>"
-                            +"<div class='cards_wrap'>"
-                                +"<div class='card_item'>"
-                                    +"<a href='formulaireChat.php'>"
-                                        +"<div class='card_inner'>"
-                                            +"<img src='asset/img/202204191209452526.webp'>"
-                                            +"<div class='title'>Black Panther</div>"
-                                            +"<div class='film'>"
-                                                +"<p>"
-                                                    +"Aliment sec pour chats<br>"
-                                                    +"à partir de<br>"
-                                                    +"<span id='prix'>24,99 €</span><br>"
-                                                    +"En stock"
-                                                +"</p>"
-                                            +"</div>"
-                                        +"</div>"
-                                    +"</a>"
-                                +"</div>"
-                                +"<div class='card_item'>"
-                                    +"<div class='card_inner'>"
-                                        +"<img src='asset/img/202204191209452526.webp'>"
-                                        +"<div class='title'>Black Panther</div>"
-                                        +"<div class='film'>"
-                                            +"<p>"
-                                                +"Aliment sec pour chats<br>"
-                                                +"à partir de<br>"
-                                                +"<span id='prix'>24,99 €</span><br>"
-                                                +"En stock"
-                                            +"</p>"
-                                        +"</div>"
-                                    +"</div>"
-                                +"</div>"
-                                +"<div class='card_item'>"
-                                    +"<div class='card_inner'>"
-                                        +"<img src='asset/img/202204191209452526.webp'>"
-                                        +"<div class='title'>Black Panther</div>"
-                                        +"<div class='film'>"
-                                            +"<p>"
-                                                +"Aliment sec pour chats<br>"
-                                                +"à partir de<br>"
-                                                +"<span id='prix'>24,99 €</span><br>"
-                                                +"En stock"
-                                            +"</p>"
-                                        +"</div>"
-                                    +"</div>"
-                                +"</div>"
-                                +"<div class='card_item'>"
-                                    +"<div class='card_inner'>"
-                                        +"<img src='asset/img/202204191209452526.webp'>"
-                                        +"<div class='title'>Black Panther</div>"
-                                        +"<div class='film'>"
-                                            +"<p>"
-                                                +"Aliment sec pour chats<br>"
-                                                +"à partir de<br>"
-                                                +"<span id='prix'>24,99 €</span><br>"
-                                                +"En stock"
-                                            +"</p>"
-                                        +"</div>"
-                                    +"</div>"
-                                +"</div>"
-                            +"</div>";
+    changePage.innerHTML = tableList;
+                            
     changePage.append();
 }

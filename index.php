@@ -13,15 +13,14 @@
 
                 </div>                
 
-                <div class="cards_wrap">
-                    <div class="card_item">
-                        <div class="card_inner">
-                            <img src="asset/img/202204191209452526.webp">
-                            <div class="title">Black Panther</div>
-                            <div class="film">
+                <div class='cards_wrap'>
+                    <div class='card_item'>
+                        <div class='card_inner'>
+                            <img class="imgProduit" src='asset/img/202204191209452526.webp'>
+                            <div class='title'>Black Panther</div>
+                            <div class='description'>
                                 <p>
                                     Aliment sec pour chats<br>
-
                                     à partir de<br>
                                     <span id='prix'>24,99 €</span><br>
                                     En stock
@@ -31,9 +30,9 @@
                     </div>
                     <div class="card_item">
                         <div class="card_inner">
-                            <img src="asset/img/202204191209452526.webp">
+                            <img class="imgProduit" src="asset/img/202204191209452526.webp">
                             <div class="title">Doctor Strange</div>
-                            <div class="film">
+                            <div class="description">
                                 <p>
                                     Aliment sec pour chats<br>
 
@@ -46,9 +45,9 @@
                     </div>
                     <div class="card_item">
                         <div class="card_inner">
-                            <img src="asset/img/202204191209452526.webp">
+                            <img class="imgProduit" src="asset/img/202204191209452526.webp">
                             <div class="title">Black Widow</div>
-                            <div class="film">
+                            <div class="description">
                                 <p>
                                     Aliment sec pour chats<br>
 
@@ -61,9 +60,9 @@
                     </div>
                     <div class="card_item">
                         <div class="card_inner">
-                            <img src="asset/img/202204191209452526.webp">
+                            <img class="imgProduit" src="asset/img/202204191209452526.webp">
                             <div class="title">Black Widow</div>
-                            <div class="film">
+                            <div class="description">
                                 <p>
                                     Aliment sec pour chats<br>
 
