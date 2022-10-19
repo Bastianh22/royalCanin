@@ -30,7 +30,7 @@
                     </div>
                     <div class="card_item">
                         <div class="card_inner">
-                            <img class="imgProduit" src="asset/img/chat.webp">
+                            <img class="imgProduit" src="asset/img/FR_129114_master.webp">
                             <div class="title">Sterilised 37</div>
                             <div class="description">
                                 <p>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="card_item">
                         <div class="card_inner">
-                            <img class="imgProduit" src="asset/img/chat.webp">
+                            <img class="imgProduit" src="asset/img/FR_129088_master.webp">
                             <div class="title">Chaton Maine Coon</div>
                             <div class="description">
                                 <p>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="card_item">
                         <div class="card_inner">
-                            <img class="imgProduit" src="asset/img/chat.webp">
+                            <img class="imgProduit" src="asset/img/FR_129086_master.webp">
                             <div class="title">Chaton British Shorthair</div>
                             <div class="description">
                                 <p>
