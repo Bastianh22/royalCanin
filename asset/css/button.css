@@ -1,0 +1,21 @@
+.btn{
+    display: inline-block;
+    position: relative;
+    text-overflow: ellipsis;
+    line-height: inherit;
+    font-size: inherit;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    text-decoration: none;
+    cursor: pointer;
+    width: auto;
+    margin-top: 50px;
+    padding: 0.6rem 2rem;
+}
+
+.btn-one{
+    background-color: #e2001a;
+    color: #fff;
+}

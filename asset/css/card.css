@@ -1,0 +1,31 @@
+.group-card{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #f2f2f2;
+}
+.card{
+    margin: 15px 10px;
+    background: #fff;
+}
+
+.card .img{
+    height: 131px;
+    width: 100%;
+}
+
+.card .content{
+    padding: 10px 20px;
+}
+
+.card .content .title{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.card .content p{
+    text-align: justify;
+    font-size: 13px;
+    margin: 10px 0;
+}
