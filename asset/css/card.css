@@ -9,6 +9,8 @@
 .cards_wrap .card_item{
 	padding: 15px 25px;
 	width: 25%;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .cards_wrap .card_inner{
