@@ -10,7 +10,7 @@
     <body>
         <div class="container">
             <div class="center">
-                <a href="index.html"><img src="asset/img/Royal-Canin-Logo-tumb.jpg"></a>
+                <a href="index.php"><img src="asset/img/Royal-Canin-Logo-tumb.jpg"></a>
                 <nav>
                     
                     <input type="checkbox" id="check">
