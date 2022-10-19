@@ -14,13 +14,15 @@
                 
                 <input class="inputText" id="button" type="submit" name="submit" value="Inscription">
             </form>
-        </div>
+
+            
 
         <button class="btn btn-one">
             <a href="index.php">
                 <img src="asset/img/arrow-left-solid.svg"/>
             </a>
         </button>
+        </div>
 
         <?php
             require("footer.php");

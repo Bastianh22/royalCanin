@@ -60,7 +60,7 @@ let suggestions = [
 let tableList = `<!--barre de rechercher avec suggestions-->
                 <div class='wrapper'>
                     <div class='search-input'>
-                        <input type='text' placeholder='Rechercher...'>
+                        <input class='inputSearch' type='text' placeholder='Rechercher...'>
                         <div class='autocom-box'>
                             <li>login</li>
                             <li>html</li>
