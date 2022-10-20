@@ -77,7 +77,7 @@ for(i=0; i<suggestions.length; i++)
 {
     console.log(i);
     tableList += `<div class='card_item'>
-                    <a href='formulaireChat.php'>
+                    <a href='formulaireChat.php?nom=${suggestions[i]}'>
                         <div class='card_inner'>
                             <img class='imgChat' src='asset/img/chat2.png'>
                             <div class='title'> ${suggestions[i]}</div>
@@ -92,4 +92,14 @@ document.querySelector("#button").onclick = function(){
     changePage.innerHTML = tableList;
                             
     changePage.append();
+}
+
+function essai(radio) {
+    if (radio=="mois") {
+        document.getElementById('third').style.display='none';
+        document.getElementById('second').style.display='block';
+    } else if (radio=="annee") {
+        document.getElementById('second').style.display='none';
+        document.getElementById('third').style.display='block';
+    }
 }

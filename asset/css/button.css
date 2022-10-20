@@ -19,3 +19,45 @@
     background-color: #e2001a;
     color: #fff;
 }
+
+.btn-radio{
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+}
+
+.btn-radio .input-radio {
+    position: absolute;
+    left: -9999px;
+}
+.btn-radio .input-radio:checked + .span-radio{
+    background-color: #d6d6e5;
+}
+.btn-radio .input-radio:checked + .span-radio:before {
+    box-shadow: inset 0 0 0 0.4375em #e2001a;
+}
+.btn-radio .span-radio{
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+}
+.btn-radio .span-radio:hover {
+    background-color: #d6d6e5;
+}
+.btn-radio .span-radio:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #e2001a;
+}
