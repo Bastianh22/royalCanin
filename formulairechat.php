@@ -12,6 +12,7 @@
                     <label class="labelText">Nom du chat</label>
                 </div>
 
+                <!-- bonton radio -->
                 <div class="radio">
                     <label class="btn-radio">
                         <input class="input-radio" type="radio" id="radio" name="formulaire" value="mois" onchange="essai(this.value)"/>
@@ -33,6 +34,7 @@
                         <label class="labelText">Ajouter le nombre d'année(s) qu'à votre chat: </label>
                     </div>
                 </div>
+
                     
                     
                 
