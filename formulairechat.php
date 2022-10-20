@@ -7,7 +7,7 @@
             <h1 class="h1">Renseignement sur votre chat</h1>
             <form class="form" action="resultat.php" method="post">
                 <div class="txt_field">
-                    <input class="inputText" type="text" name="nomChat" required>
+                    <input class="inputText" type="text" name="nomChat" pattern="^\\D[A-z-]*$" required>
                     <span class="spanText"></span>
                     <label class="labelText">Nom du chat</label>
                 </div>
@@ -23,7 +23,7 @@
                         <span class="span-radio">Année(s)</span>
                     </label>              
                     <div class="txt_field">
-                        <input class="inputText" type="number" name="ageChat" required/>
+                        <input class="inputText" type="number" name="ageChat" pattern="^\d+$" required/>
                         <span class="spanText"></span>
                         <label class="labelText">Ajouter le nombre d'année(s) qu'à votre chat: </label>
                     </div>
