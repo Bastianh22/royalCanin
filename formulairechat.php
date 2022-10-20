@@ -23,13 +23,13 @@
                         <span class="span-radio">Année(s)</span>
                     </label>            
                     <div class="txt_field" id="second" style="display:none">
-                        <input class="inputText" id="test" type="text" name="anneeChat" required/>
+                        <input id="age" class="inputText" id="test" type="number" name="anneeChat" required/>
                         <span class="spanText"></span>
                         <label class="labelText">Ajouter le nombre de mois qu'à votre chat: </label>
                     </div>
                                 
                     <div class="txt_field" id="third" style="display:none">
-                        <input class="inputText" id="testBis" type="text" name="anneeChat" required/>
+                        <input id="age" class="inputText" id="testBis" type="number" name="anneeChat" required/>
                         <span class="spanText"></span>
                         <label class="labelText">Ajouter le nombre d'année(s) qu'à votre chat: </label>
                     </div>
