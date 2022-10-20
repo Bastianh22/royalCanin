@@ -6,11 +6,6 @@
             $ageChat = htmlspecialchars($_POST['ageChat']); // recupere l'âge du chat mis par l'utilisateur
             $nomRace = htmlspecialchars($_POST['nomRace']); // recupere la race du chat selectionner precedemment
 
-            echo $nomChat;
-            echo $unite;
-            echo $ageChat;
-            echo $nomRace;
-
             //tableau avec les age des chat correspondant à l'age humain
             $ageMois = array(
                 "1" => "6 mois",
@@ -48,6 +43,7 @@
 
             $age ='';
 
+            // boucle pour rechercher l'age humain correspondent à l'age du chat rentre
             if($unite == 'ans')
             {
                 foreach($ageAnnee as $clef => $valeur)
