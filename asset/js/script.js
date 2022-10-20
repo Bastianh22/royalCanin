@@ -58,14 +58,20 @@ let suggestions = [
 ]
 
 let tableList = `<!--barre de rechercher avec suggestions-->
-                <div class="searchBar">
-                    <form autocomplete="off" action="/action_page.php">
-                        <div class="autocomplete" style="width:300px;">
-                            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                <div class='wrapper'>
+                    <div class='search-input'>
+                        <input class='inputSearch' id='auto' type='text' placeholder='Rechercher...'>
+                        <div class='autocom-box'>
+                            <li>login</li>
+                            <li>html</li>
+                            <li>javascript</li>
+                            <li>freelancer</li>
+                            <li>web designer</li>
                         </div>
-                        <input type="submit">
-                    </form>
+                        <div class='icon'><i class='fas fa-search'></i></div>
+                    </div>
                 </div>
+                <script src="asset/js/searchbar.js"></script>
                 <div class='cards_wrap'>`;
 
 for(i=0; i<suggestions.length; i++)
@@ -98,39 +104,3 @@ function essai(radio) {
         document.getElementById('third').style.display='block';
     }
 }
-
-
-
-
-// const liens = document.querySelectorAll("img");
-// const liensArray = Array.from(liens);
-// liensArray.map(lien => lien.addEventListener
-// ("click", function(event){
-//     event.preventDefault();
-//     // console.logo("")
-//     location.replace("https://www.google.fr/")
-// }));
-
-
-$(document).ready(function() {
-							
-    $('#submit').click(function(){
-     
-     //Get the values
-     var age  = $('#age').val();
-     var animal = $('#animal').val();
-     
-     if(age==1) {
-        var humain = (age*4)+15;
-     } else if(age>=19) {
-        var humain = (age*6)-20;
-     } else {
-        var humain = (age*4)+16;
-     }
-     
-     var resultat = "Votre " + animal + " de " + age + " an(s) aurait " + humain + " an(s) s'il &eacute;tait un humain";
-     
-    //  $('#results').html(resultat).fadeIn("slow");
-
-    });
-});
