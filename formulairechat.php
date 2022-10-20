@@ -5,9 +5,9 @@
         <!--formulaire-->
         <div class="mil">
             <h1 class="h1">Renseignement sur votre chat</h1>
-            <form class="form" action="users.php" method="post">
+            <form class="form" action="resultat.php" method="post">
                 <div class="txt_field">
-                    <input class="inputText" type="text" name="nom" required>
+                    <input class="inputText" type="text" name="nomChat" required>
                     <span class="spanText"></span>
                     <label class="labelText">Nom du chat</label>
                 </div>
@@ -15,35 +15,21 @@
                 <!-- bonton radio -->
                 <div class="radio">
                     <label class="btn-radio">
-                        <input class="input-radio" type="radio" id="radio" name="formulaire" value="mois" onchange="essai(this.value)"/>
+                        <input class="input-radio" type="radio" name="radio" value="mois" required/>
                         <span class="span-radio">Mois</span>
                     </label>
                     <label class="btn-radio">
-                        <input class="input-radio" type="radio" id="radio" name="formulaire" value="annee" onchange="essai(this.value)"/>
+                        <input class="input-radio" type="radio" id="radio" name="radio" value="ans"/>
                         <span class="span-radio">Année(s)</span>
-                    </label>            
-                    <div class="txt_field" id="second" style="display:none">
-
-                        <input id="age" class="inputText" id="test" type="number" name="anneeChat" required/>
-
-                        <input class="inputText" id="test" type="number" name="anneeChat" required/>
-
-                        <span class="spanText"></span>
-                        <label class="labelText">Ajouter le nombre de mois qu'à votre chat: </label>
-                    </div>                
-                    <div class="txt_field" id="third" style="display:none">
-                        <input id="age" class="inputText" id="testBis" type="number" name="anneeChat" required/>
-
-                        <input class="inputText" id="testBis" type="number" name="anneeChat" required/>
-
+                    </label>              
+                    <div class="txt_field">
+                        <input class="inputText" type="number" name="ageChat" required/>
                         <span class="spanText"></span>
                         <label class="labelText">Ajouter le nombre d'année(s) qu'à votre chat: </label>
                     </div>
                 </div>
+                <input type="hidden" name="nomRace" value="<?= htmlspecialchars($_GET['nom']);?>"/>
 
-                    
-                    
-                
                 <input class="inputText" id="button" type="submit" name="submit" value="Calculer">
             </form>
 

@@ -95,16 +95,6 @@ document.querySelector("#button").onclick = function(){
     changePage.append();
 }
 
-function essai(radio) {
-    if (radio=="mois") {
-        document.getElementById('third').style.display='none';
-        document.getElementById('second').style.display='block';
-    } else if (radio=="annee") {
-        document.getElementById('second').style.display='none';
-        document.getElementById('third').style.display='block';
-    }
-}
-
 
 let age_chat = {
     "1" : "19",
