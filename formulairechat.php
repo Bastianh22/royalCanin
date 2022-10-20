@@ -4,7 +4,7 @@
 
         <!--formulaire-->
         <div class="mil">
-            <h1 class="h1">Inscription</h1>
+            <h1 class="h1">Renseignement sur votre chat</h1>
             <form class="form" action="users.php" method="post">
                 <div class="txt_field">
                     <input class="inputText" type="text" name="nom" required>
@@ -14,26 +14,29 @@
 
                 <div class="radio">
                     <label class="btn-radio">
-                        <input class="input-radio" type="radio" value="mois" onchange="essai(this.value)"/>
+                        <input class="input-radio" type="radio" id="radio" name="formulaire" value="mois" onchange="essai(this.value)"/>
                         <span class="span-radio">Mois</span>
                     </label>
                     <label class="btn-radio">
-                        <input class="input-radio" type="radio" value="annee" onchange="essai(this.value)">
+                        <input class="input-radio" type="radio" id="radio" name="formulaire" value="annee" onchange="essai(this.value)"/>
                         <span class="span-radio">Année(s)</span>
-                    </label>
-                    <div id="second" style="display:none">
-                        Bonjour: <input type="text" id="test"/>
+                    </label>            
+                    <div class="txt_field" id="second" style="display:none">
+                        <input class="inputText" id="test" type="text" name="anneeChat" required/>
+                        <span class="spanText"></span>
+                        <label class="labelText">Ajouter le nombre de mois qu'à votre chat: </label>
                     </div>
                                 
-                    <div id="third" style="display:none">
-                        Au-revoir: <input type="text" id="testBis"/>
+                    <div class="txt_field" id="third" style="display:none">
+                        <input class="inputText" id="testBis" type="text" name="anneeChat" required/>
+                        <span class="spanText"></span>
+                        <label class="labelText">Ajouter le nombre d'année(s) qu'à votre chat: </label>
                     </div>
                 </div>
                     
-                                
                     
                 
-                <input class="inputText" id="button" type="submit" name="submit" value="Inscription">
+                <input class="inputText" id="button" type="submit" name="submit" value="Calculer">
             </form>
 
             
