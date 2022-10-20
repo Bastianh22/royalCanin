@@ -7,7 +7,7 @@
             <h1 class="h1">Renseignement sur votre chat</h1>
             <form class="form" action="resultat.php" method="post">
                 <div class="txt_field">
-                    <input class="inputText" type="text" name="nomChat" pattern="^\\D[A-z-]*$" required>
+                    <input class="inputText" type="text" name="nomChat" pattern="^\D[A-z-]*$" required>
                     <span class="spanText"></span>
                     <label class="labelText">Nom du chat</label>
                 </div>
