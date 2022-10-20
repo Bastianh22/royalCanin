@@ -11,6 +11,7 @@
             echo $ageChat;
             echo $nomRace;
 
+            //tableau avec les age des chat correspondant à l'age humain
             $ageMois = array(
                 "1" => "6 mois",
                 "2" => "3 ans",
@@ -45,8 +46,9 @@
                 "21" => "96 ans"
             );
 
+            $age ='';
 
-            if($unite == 'annee')
+            if($unite == 'ans')
             {
                 foreach($ageAnnee as $clef => $valeur)
                 {

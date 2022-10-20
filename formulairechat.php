@@ -19,7 +19,7 @@
                         <span class="span-radio">Mois</span>
                     </label>
                     <label class="btn-radio">
-                        <input class="input-radio" type="radio" id="radio" name="radio" value="ans"/>
+                        <input class="input-radio" type="radio" name="radio" value="ans"/>
                         <span class="span-radio">Année(s)</span>
                     </label>              
                     <div class="txt_field">
