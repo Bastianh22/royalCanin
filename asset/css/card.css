@@ -27,7 +27,7 @@
 }
 
 .cards_wrap .card_item .imgProduit{
-	width: 131px;
+	width: 100%;
 	height: 131px;
 	margin-bottom: 5px;
 }
