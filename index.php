@@ -11,7 +11,9 @@
 
                 <div id="bonjour">
 
-                </div>                
+                </div>         
+                
+                <!-- card alimentation chat -->
 
                 <div class='cards_wrap'>
                     <div class='card_item'>
