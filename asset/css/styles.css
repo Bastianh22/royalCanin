@@ -23,3 +23,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.spanDescrib{
+  color: #e2001a;
+	font-weight: 900;
+	font-size: 26px;
+}
+
+.describ{
+  font-size: 14px;
+	line-height: 24px;
+	color: #666666;
+}

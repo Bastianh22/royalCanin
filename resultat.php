@@ -18,43 +18,13 @@
                 "18" => "21 ans"
             );
 
-            $ageAnnee = array(
-                "1" => "15 ans",
-                "2" => "24 ans",
-                "3" => "28 ans",
-                "4" => "32 ans",
-                "5" => "36 ans",
-                "6" => "40 ans",
-                "7" => "44 ans",
-                "8" => "48 ans",
-                "9" => "52 ans",
-                "10" => "56 ans",
-                "11" => "60 ans",
-                "12" => "64 ans",
-                "13" => "68 ans",
-                "15" => "72 ans",
-                "16" => "76 ans",
-                "17" => "80 ans",
-                "18" => "84 ans",
-                "19" => "88 ans",
-                "20" => "94 ans",
-                "21" => "96 ans"
-            );
-
-            $age ='';
+            if($ageChat>1 and $unite == 'ans')
+            {
+                $age = 24+(($ageChat-2)*4) .' ans';
+            }
 
             // boucle pour rechercher l'age humain correspondent à l'age du chat rentre
-            if($unite == 'ans')
-            {
-                foreach($ageAnnee as $clef => $valeur)
-                {
-                    if($clef == $ageChat)
-                    {
-                        $age = $valeur;
-                    }
-                }
-            }
-            else
+            if($unite == 'mois')
             {
                 foreach($ageMois as $clef => $valeur)
                 {
@@ -86,6 +56,11 @@
                     Age de votre chat en humain: <?= $age?>
                 </span>
             </div>
+            <a href="formulaireChat.php?nom=<?= $nomRace?>">
+                <button class="btn btn-one">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </a>
         </div>
 
         <?php

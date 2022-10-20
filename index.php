@@ -8,11 +8,23 @@
                         Calcule l'âge humain de votre chat
                     </button>
                 </div>
+                <br><br>
 
-                <div id="bonjour">
-
+                <div class="center">
+                    <span class="spanDescrib"> La bonne nutrition santé pour votre chaton</span>
+                    <div class="describ">
+                        Chaque chaton est spécial et a des besoins nutritionnels différents. C'est pourquoi il convient de<br>
+                        tenir compte de leur race, de leur âge, de leur sensibilité et de leur mode de vie lorsqu'il s'agit de<br>
+                        choisir la bonne nourriture. En utilisant les filtres de cette page, vous pouvez trouver la nourriture<br>
+                        la plus appropriée pour votre chaton
+                    </div>
                 </div>         
                 
+                <div>
+                    <span class="spanDescrib">
+                        Le bon aliment pour votre chat :
+                    </span>
+                </div>
                 <!-- card alimentation chat -->
 
                 <div class='cards_wrap'>
