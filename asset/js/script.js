@@ -58,14 +58,20 @@ let suggestions = [
 ]
 
 let tableList = `<!--barre de rechercher avec suggestions-->
-                <div class="searchBar">
-                    <form autocomplete="off" action="/action_page.php">
-                        <div class="autocomplete" style="width:300px;">
-                            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                <div class='wrapper'>
+                    <div class='search-input'>
+                        <input class='inputSearch' id='auto' type='text' placeholder='Rechercher...'>
+                        <div class='autocom-box'>
+                            <li>login</li>
+                            <li>html</li>
+                            <li>javascript</li>
+                            <li>freelancer</li>
+                            <li>web designer</li>
                         </div>
-                        <input type="submit">
-                    </form>
+                        <div class='icon'><i class='fas fa-search'></i></div>
+                    </div>
                 </div>
+                <script src="asset/js/searchbar.js"></script>
                 <div class='cards_wrap'>`;
 
 for(i=0; i<suggestions.length; i++)
